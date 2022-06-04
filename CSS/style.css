@@ -4,6 +4,7 @@
     box-sizing: border-box;
     color: white;
 	font-family: 'Fredericka the Great', cursive; 
+	/* font-size: 18px; */
 }
 
 header{
@@ -19,48 +20,31 @@ body{
 
 main{
 	background-color: rgba(17, 31, 60, 0.5);
-	min-height: 80vh;
+	min-height: 73vh;
 }
 
 .menu{
     display: flex;
-}
-
-.menu p{
-	max-height: 80px;
-	margin: 0px 0px 0px 20px;
-}
-
-#img_logo {
-    height: 80px;
-	transform: translate(0%,50%);
+	flex-wrap: wrap;
 }
 
 nav{
-    padding: 20px;
-    margin-top: 40px;
-	margin-bottom: 40px;
 	background-color: white;
 	border-radius: 10px;
+	padding: 15px;
 }
 
 /*Lista de menu horizontal*/
-ul{
-    display: flex;
-    text-align: center;
-    list-style: none;
-	margin: 0px 10px 0px 10px
-}
 
 nav li a {
     text-decoration: none;
     color: black;
-    margin-right: 50px;
-    font-size: 18px;
+    margin-right: 4vw;
+    font-size: 1.125rem;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#li_ultimo{
+#li_ultimo a{
     margin-right: 0px;
 }
 
@@ -80,15 +64,15 @@ footer p {
 
 .DeRenta,.GallinaWare{
 	display: flex;
-	padding:10px;
+	padding: 20px;
 }
 
 .productos p{
-	font-size: 25px;
+	font-size: 1.4rem;
 }
 
 .productos img{
-	width: 40vw;
+	width: 30vw;
 	padding: 0px; 
 }
 
@@ -96,14 +80,26 @@ footer p {
 
 .acerca_de_nosotros{
 	width: 50vw;
-	font-size: 20px;
+	font-size: 1.25rem;
+}
+
+/* .acerca_de_nosotros .texto{
+	margin-top: 50px;
+} */
+
+.acerca_de_nosotros img{
+	width: 40vw;
+	margin: 20px 0px 50px 0px;
+	border-top-left-radius: 30px;
+  	border-bottom-right-radius: 30px;
+	border: 20px double #111F3C;
 }
 
 .acerca_de_nosotros iframe{
-	width: 491px;
+	width: 40vw;
 	height: 300px; 
 	border:0;
-	margin: 50px 0px 50px 0px;
+	margin: 40px 0px 40px 0px;
 }
 
 /*slider*/

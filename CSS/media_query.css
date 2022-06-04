@@ -1,0 +1,200 @@
+@media (min-width: 1005px) {
+	.menu p{
+		max-height: 80px;
+		margin: 0px 0px 0px 20px;
+	}
+
+	#img_logo {
+		height: 80px;
+		transform: translate(0%,50%);
+	}
+}
+
+@media (min-width: 991px) {
+	.menu p{
+		max-height: 80px;
+	}
+
+	#img_logo {
+		height: 80px;
+		transform: translate(0%,50%);
+	}
+
+	nav{
+    	margin-top: 40px;
+		margin-bottom: 40px;
+	}
+}
+
+@media (max-width: 991px) {
+	.menu p{
+		max-height: 80px;
+	}
+
+	#img_logo {
+		height: 80px;
+		margin-top: 10px;
+	}
+
+	.acerca_de_nosotros p img{
+		width: 50vw;
+	}
+
+	.menu{
+		flex-direction: column;
+	}
+
+	nav{
+    	margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}
+/* productos */
+@media (max-width: 820px){
+	.productos img{
+		width: 30vw;
+	}
+
+	.productos p{
+		font-size: 1.3rem;
+	}
+}
+
+@media (min-width: 721px){
+	ul{
+		display: flex;
+		text-align: center;
+		list-style: none;
+		margin: 0px 10px 0px 10px
+	}
+
+	.a_logo{
+		transform: translate(0%,0%)!important;
+	}
+}
+
+@media (max-width: 720px){
+	ul{
+		list-style: none;
+	}
+	
+	#li_ultimo{
+		margin-bottom: 0px;
+	}
+
+	nav li{
+		margin-bottom: 20px;
+	}
+
+	.acerca_de_nosotros{
+		width: 100vw;
+	}
+	
+	.acerca_de_nosotros img{
+		margin: 20px 0px 10px 0px;
+	}
+
+	.acerca_de_nosotros .texto{
+		text-align: center;
+		margin: 0px 20px 0px 20px;
+	}
+
+	.productos p{
+		font-size: 1.3rem;
+	}
+
+	.menu{
+		flex-direction:row;
+	}
+
+	.DeRenta img{
+		order: 1;
+		width: 50vw;
+		margin-bottom: 20px;
+	}
+
+	.DeRenta p{
+		order:2;
+	}
+
+	.DeRenta,.GallinaWare{
+		display:grid;
+	}
+
+	.GallinaWare img{
+		width:40vw;
+	}
+}
+
+/* @media (max-width: 670px){
+	.productos img{
+		width: 25vw;
+	}
+
+	.productos p{
+		font-size: 1rem;
+	}
+} */
+
+@media (max-width: 567px){
+	/* .productos img{
+		width: 30vw;
+	} */
+	.productos p{
+		font-size: 1.5rem;
+		text-align: center;
+	}
+
+	.DeRenta img{
+		width:60vw;
+	}
+
+	.GallinaWare img{
+		width:50vw;
+	}
+}
+
+@media (max-width: 500px){
+	#img_logo {
+		height: 80px;
+		margin-top: 10px;
+	}
+
+	.a_logo{
+		transform: translate(0%,0%);
+	}
+
+	nav li{
+		margin-bottom: 10px;
+	}
+
+	.menu{
+		display:grid;
+	}
+
+	.acerca_de_nosotros p img{
+		width: 70vw;
+	}
+
+	.acerca_de_nosotros iframe{
+		width: 70vw;
+	}
+}
+
+@media (max-width: 400px){
+	.DeRenta img{
+		width: 70vw;
+	}
+
+	.GallinaWare img{
+		width: 60vw;
+	}
+
+	.productos p{
+		font-size: 1.3rem;
+	}
+
+	.acerca_de_nosotros p img{
+		width: 100vw;
+	}
+}
