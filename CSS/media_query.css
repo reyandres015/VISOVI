@@ -1,43 +1,6 @@
-@media (min-width: 1005px) {
-	.menu p{
-		max-height: 80px;
-		margin: 0px 0px 0px 20px;
-	}
-
+@media (max-width: 1135px) {
 	#img_logo {
-		height: 80px;
-		transform: translate(0%,50%);
-	}
-}
-
-@media (min-width: 991px) {
-	.menu p{
-		max-height: 80px;
-	}
-
-	#img_logo {
-		height: 80px;
-		transform: translate(0%,50%);
-	}
-
-	nav{
-    	margin-top: 40px;
-		margin-bottom: 40px;
-	}
-}
-
-@media (max-width: 991px) {
-	.menu p{
-		max-height: 80px;
-	}
-
-	#img_logo {
-		height: 80px;
 		margin-top: 10px;
-	}
-
-	.acerca_de_nosotros p img{
-		width: 50vw;
 	}
 
 	.menu{
@@ -47,6 +10,23 @@
 	nav{
     	margin-top: 10px;
 		margin-bottom: 10px;
+	}
+
+	.acerca_de_nosotros{
+		width: 100vw;
+	}
+
+	.seccion_1{
+		width: 50vw;
+	}
+
+	.acerca_de_nosotros p img{
+		width: 50vw;
+	}
+
+	.acerca_de_nosotros iframe{
+		width: 80vw;
+		height: 500px;
 	}
 }
 /* productos */
@@ -58,26 +38,20 @@
 	.productos p{
 		font-size: 1.3rem;
 	}
-}
 
-@media (min-width: 721px){
+	.menu{
+		flex-direction:row;
+	}
+
+	.menu p{
+		margin:0px;
+	}
+
 	ul{
-		display: flex;
-		text-align: center;
-		list-style: none;
-		margin: 0px 10px 0px 10px
+		display: block;
+		text-align: left;
 	}
 
-	.a_logo{
-		transform: translate(0%,0%)!important;
-	}
-}
-
-@media (max-width: 720px){
-	ul{
-		list-style: none;
-	}
-	
 	#li_ultimo{
 		margin-bottom: 0px;
 	}
@@ -86,62 +60,57 @@
 		margin-bottom: 20px;
 	}
 
-	.acerca_de_nosotros{
+	.seccion_1{
 		width: 100vw;
-	}
-	
-	.acerca_de_nosotros img{
-		margin: 20px 0px 10px 0px;
 	}
 
 	.acerca_de_nosotros .texto{
-		text-align: center;
-		margin: 0px 20px 0px 20px;
+		margin: 0px 50px 0px 50px;
 	}
+
+	.acerca_de_nosotros p img{
+		margin: 20px 0px 10px 0px;
+		width: 80vw;
+	}
+}
+@media (max-width: 720px){
+	/* acerca de nosotros */
+	.acerca_de_nosotros iframe{
+		width: 80vw;
+	}
+
+	/* productos */
 
 	.productos p{
-		font-size: 1.3rem;
-	}
-
-	.menu{
-		flex-direction:row;
+		font-size: 1.5rem;
 	}
 
 	.DeRenta img{
-		order: 1;
 		width: 50vw;
 		margin-bottom: 20px;
 	}
 
-	.DeRenta p{
-		order:2;
+	.texto {
+		order: 2;
 	}
 
-	.DeRenta,.GallinaWare{
+	.DeRenta,.GallinaWare,.VisoviLegal{
 		display:grid;
 	}
 
 	.GallinaWare img{
 		width:40vw;
 	}
+
+	.VisoviLegal img{
+		width: 350px;
+		margin-bottom: 20px;
+		margin-right: 0px;
+	}
 }
 
-/* @media (max-width: 670px){
-	.productos img{
-		width: 25vw;
-	}
-
-	.productos p{
-		font-size: 1rem;
-	}
-} */
-
 @media (max-width: 567px){
-	/* .productos img{
-		width: 30vw;
-	} */
 	.productos p{
-		font-size: 1.5rem;
 		text-align: center;
 	}
 
@@ -155,15 +124,6 @@
 }
 
 @media (max-width: 500px){
-	#img_logo {
-		height: 80px;
-		margin-top: 10px;
-	}
-
-	.a_logo{
-		transform: translate(0%,0%);
-	}
-
 	nav li{
 		margin-bottom: 10px;
 	}
@@ -172,12 +132,24 @@
 		display:grid;
 	}
 
+	.DeRenta img{
+		width: 65vw;
+	}
+
+	.GallinaWare img{
+		width: 55vw;
+	}
+
 	.acerca_de_nosotros p img{
-		width: 70vw;
+		width: 95vw;
 	}
 
 	.acerca_de_nosotros iframe{
-		width: 70vw;
+		width: 90vw;
+	}
+
+	.acerca_de_nosotros iframe{
+		height: 300px;
 	}
 }
 
@@ -194,7 +166,17 @@
 		font-size: 1.3rem;
 	}
 
-	.acerca_de_nosotros p img{
-		width: 100vw;
+	.VisoviLegal img{
+		width: 300px;
+	}
+
+	.acerca_de_nosotros .texto{
+		font-size: 1.5rem;
+	}
+}
+
+@media (max-width: 300px){
+	.productos p{
+		font-size: 1.1rem;
 	}
 }

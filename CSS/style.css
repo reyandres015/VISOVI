@@ -20,7 +20,13 @@ body{
 
 main{
 	background-color: rgba(17, 31, 60, 0.5);
-	min-height: 73vh;
+	min-height: 100vh;
+	border-top: 3px  dotted#111F3C;
+	border-bottom: 3px  dotted#111F3C;
+}
+
+#img_logo {
+	width: 230px;
 }
 
 .menu{
@@ -28,19 +34,41 @@ main{
 	flex-wrap: wrap;
 }
 
+.menu p{
+	display: flex;
+	align-items: center;
+	margin: 0px 0px 0px 20px;
+}
+
 nav{
 	background-color: white;
 	border-radius: 10px;
 	padding: 15px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+nav a:focus{
+	background-color: #2b3a5a;
+	border-radius: 10px;
+	padding: 10px 20px 10px 20px;
+	color:white;
 }
 
 /*Lista de menu horizontal*/
+
+ul{
+	display: flex;
+	text-align: center;
+	list-style: none;
+	margin: 0px 10px 0px 10px
+}
 
 nav li a {
     text-decoration: none;
     color: black;
     margin-right: 4vw;
-    font-size: 1.125rem;
+    font-size: 1.4rem;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -61,10 +89,24 @@ footer p {
 }
 
 /*productos*/
+.DeRenta{
+	background-color: #a4b20d22;
+}
 
-.DeRenta,.GallinaWare{
+.VisoviLegal{
+	background-color: rgba(17, 31, 60, 0.3);
+}
+
+.GallinaWare{
+	background-color: #f4a76c55;
+}
+
+.DeRenta,.GallinaWare,.VisoviLegal{
 	display: flex;
-	padding: 20px;
+	margin: 40px 20px 40px 20px;
+	padding: 40px 20px 40px 20px;
+	border: 3px  dotted#111F3C;
+	border-radius: 25px;
 }
 
 .productos p{
@@ -76,20 +118,29 @@ footer p {
 	padding: 0px; 
 }
 
+.VisoviLegal img{
+	margin-right: 20px;
+}
+
+.VisoviLegal p{
+	display: flex;
+	align-items: center;
+}
+
 /* Acerca de Nosotros */
 
 .acerca_de_nosotros{
 	width: 50vw;
-	font-size: 1.25rem;
+	font-size: 1.7rem;
 }
 
-/* .acerca_de_nosotros .texto{
-	margin-top: 50px;
-} */
+.acerca_de_nosotros .texto{
+	text-align: center;
+}
 
 .acerca_de_nosotros img{
 	width: 40vw;
-	margin: 20px 0px 50px 0px;
+	margin: 20px 0px 20px 0px;
 	border-top-left-radius: 30px;
   	border-bottom-right-radius: 30px;
 	border: 20px double #111F3C;
@@ -97,7 +148,7 @@ footer p {
 
 .acerca_de_nosotros iframe{
 	width: 40vw;
-	height: 300px; 
+	height: 400px; 
 	border:0;
 	margin: 40px 0px 40px 0px;
 }
