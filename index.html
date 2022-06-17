@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VISOVI S.A.S</title>
     <link rel="stylesheet" href="./CSS/style.css">
-    <link rel="stylesheet" href="./CSS/media_query.css" media="screen and (max-width: 1135px)">
+    <link rel="stylesheet" href="./CSS/slider.css">
+    <link rel="stylesheet" href="./CSS/media_query.css" media="screen and (max-width: 1350px)">
     <!-- icono -->
     <link rel="shortcut icon" href="./Imagen/favicon.ico">
     <!-- Fuente -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Fredericka+the+Great&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="header">
@@ -20,14 +21,21 @@
         <!-- logo -->
         <p><a href="index.html"><img src="./Imagen/VISOVI.png" alt="Logo VISOVI.SAS" id="img_logo"></a></p>
         <!-- Barra de Navegacion -->
-        <nav>  
+        <nav>
+          <div class="nav_container">
+            <label for="menu" class="nav_label">
+              <img src="./Imagen/bx-menu.svg" alt="">
+            </label>
+            <input type="checkbox" id="menu" class="nav_input">
             <ul>
               <li><a href="index.html">Inicio</a></li>
               <li><a href="./HTML/productos.html">Nuestros Servicios</a></li>
-              <li><a href="https://www.derenta.com.co/es-es/" target="_blank">DeRenta</a></li>
+              <li><a href="./HTML/legal.html">Visovi Legal</a></li>
               <li><a href="./HTML/gallinaware.html">GallinaWare</a></li>
+              <li><a href="https://www.derenta.com.co/es-es/" target="_blank">DeRenta</a></li>
               <li id="li_ultimo"><a href="./HTML/acerca_de_nosotros.html">Acerca de Nosotros</a></li>
             </ul>
+          </div>
         </nav>
     </div>
 </header>

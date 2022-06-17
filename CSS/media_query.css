@@ -1,4 +1,4 @@
-@media (max-width: 1135px) {
+@media (max-width: 1350px){
 	#img_logo {
 		margin-top: 10px;
 	}
@@ -11,7 +11,9 @@
     	margin-top: 10px;
 		margin-bottom: 10px;
 	}
+}
 
+@media (max-width: 1135px) {
 	.acerca_de_nosotros{
 		width: 100vw;
 	}
@@ -29,22 +31,14 @@
 		height: 500px;
 	}
 }
-/* productos */
-@media (max-width: 820px){
-	.productos img{
-		width: 30vw;
-	}
 
-	.productos p{
-		font-size: 1.3rem;
-	}
-
+@media (max-width: 1030px){
 	.menu{
 		flex-direction:row;
 	}
 
-	.menu p{
-		margin:0px;
+	nav{
+		margin-right: 20px;
 	}
 
 	ul{
@@ -60,17 +54,39 @@
 		margin-bottom: 20px;
 	}
 
+	nav li a{
+		font-size: 1.5rem;
+	}
+
+	.acerca_de_nosotros .texto{
+		font-size: 1.7rem;
+		text-align: left;
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+
 	.seccion_1{
 		width: 100vw;
 	}
 
-	.acerca_de_nosotros .texto{
-		margin: 0px 50px 0px 50px;
-	}
-
 	.acerca_de_nosotros p img{
 		margin: 20px 0px 10px 0px;
-		width: 80vw;
+		width: 50vw;
+	}
+}
+
+/* productos */
+@media (max-width: 820px){
+	.productos img{
+		width: 30vw;
+	}
+
+	.productos p{
+		font-size: 1.3rem;
+	}
+
+	.acerca_de_nosotros .texto{
+		margin: 0px 50px 0px 50px;
 	}
 }
 @media (max-width: 720px){
@@ -123,7 +139,13 @@
 	}
 }
 
-@media (max-width: 500px){
+@media (max-width: 540px){
+	nav{
+		margin: 0 auto;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	
 	nav li{
 		margin-bottom: 10px;
 	}
@@ -132,6 +154,12 @@
 		display:grid;
 	}
 
+	.menu p{
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 500px){
 	.DeRenta img{
 		width: 65vw;
 	}
@@ -146,14 +174,26 @@
 
 	.acerca_de_nosotros iframe{
 		width: 90vw;
+		height: 300px;
 	}
 
-	.acerca_de_nosotros iframe{
-		height: 300px;
+	.acerca_de_nosotros .texto{
+		font-size: 1.3rem;
+	}
+}
+
+@media (max-width: 420px){
+	.VisoviLegal img{
+		width: 70vw;
 	}
 }
 
 @media (max-width: 400px){
+	nav li a{
+		font-size: 1.3rem;
+		margin-right: 0px;
+	}
+	
 	.DeRenta img{
 		width: 70vw;
 	}
@@ -163,20 +203,10 @@
 	}
 
 	.productos p{
-		font-size: 1.3rem;
-	}
-
-	.VisoviLegal img{
-		width: 300px;
+		font-size: 1.4rem;
 	}
 
 	.acerca_de_nosotros .texto{
 		font-size: 1.5rem;
-	}
-}
-
-@media (max-width: 300px){
-	.productos p{
-		font-size: 1.1rem;
 	}
 }
