@@ -103,6 +103,80 @@ ul{
     padding-right: 0px;
 }
 
+/* menu productos */
+
+.container-all{
+	max-width: 8vw;
+	margin-top: 100px;
+}
+
+.container-box{
+
+}
+
+.box{
+	width: 250px;
+	height: 180px;
+	padding: 20px;
+	background: white;
+	text-align: center;
+	position: relative;
+	overflow:hidden ;
+}
+
+.box, h4, .box p{
+	position: relative;
+	color: black;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	z-index: 1;
+	transition: .5s;
+}
+
+.box p{
+	position: relative;
+	margin-top: 10px;
+	font-size: 1rem;
+	transform: translateY(100px);
+	opacity: 0;
+}
+
+.box h4{
+	font-size: 35px;
+	transform: translateY(50px);
+}
+
+.box:hover p{
+	transform: translateY(0);
+	color: white;
+	opacity: 1;
+}
+
+.box:hover h4{
+	color: aliceblue;
+	font-size: 30px;
+	transform: translateY(0);
+}
+
+.box .background-hover{
+	background-color: #111f3cf0;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 250px;
+	left: -170px;
+	border-radius: 100%;
+	transition: all 300ms;
+}
+
+.box:hover .background-hover{
+	width: 400px;
+	height: 400px;
+	top: -70px;
+	left: -70px;
+}
+
+/* footer */
+
 footer{
 	background-color: #111F3C;
 	min-height: 50px;
