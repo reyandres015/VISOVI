@@ -46,7 +46,7 @@
 		text-align: left;
 	}
 
-	#li_ultimo{
+	.li_ultimo{
 		margin-bottom: 0px;
 	}
 
@@ -101,11 +101,6 @@
 		font-size: 1.5rem;
 	}
 
-	.DeRenta img{
-		width: 50vw;
-		margin-bottom: 20px;
-	}
-
 	.texto {
 		order: 2;
 	}
@@ -114,11 +109,16 @@
 		display:grid;
 	}
 
-	.GallinaWare img{
-		width:40vw;
+	.productos .GallinaWare img{
+		width: 40vw;
 	}
 
-	.VisoviLegal img{
+	.productos .DeRenta img{
+		width: 50vw;
+		margin-bottom: 20px;
+	}
+
+	.productos .VisoviLegal img{
 		width: 350px;
 		margin-bottom: 20px;
 		margin-right: 0px;
@@ -183,7 +183,7 @@
 }
 
 @media (max-width: 420px){
-	.VisoviLegal img{
+	.productos .VisoviLegal img{
 		width: 70vw;
 	}
 }
