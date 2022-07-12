@@ -11,9 +11,17 @@
     	margin-top: 10px;
 		margin-bottom: 10px;
 	}
+
+	.imgVisoviLegal{
+		width: 15vw;
+	}
 }
 
 @media (max-width: 1135px) {
+	.imgDeRenta{
+		width: 16vw;
+	}
+	
 	.acerca_de_nosotros{
 		width: 100vw;
 	}
@@ -58,6 +66,33 @@
 		font-size: 1.5rem;
 	}
 
+	.container-all{
+		padding: 0px;
+	}
+
+	.container-box{
+		flex-direction: column;
+		width: 100vw;
+		height: 100vh;
+		margin: 0px;
+	}
+
+	.box{
+		height: 20vw;
+		width: 50vw;
+		margin: 0 auto;
+		/* border: 0px; */
+	}
+
+	.box h4{
+		transform: translateY(35px);
+	}
+
+	.imgDeRenta{
+		width: 15vw;
+		translate: 0px -35px;
+	}
+
 	.acerca_de_nosotros .texto{
 		font-size: 1.7rem;
 		text-align: left;
@@ -77,6 +112,10 @@
 
 /* productos */
 @media (max-width: 820px){
+	.imgDeRenta{
+		width: 14vw;
+	}
+	
 	.productos img{
 		width: 30vw;
 	}

@@ -140,7 +140,7 @@ ul{
 	width: 17vw;
 }
 
-.sqrVisoviLegal{
+#sqrVisoviLegal{
 	background-color: rgba(17, 31, 60, 0.3);
 }
 
@@ -149,8 +149,12 @@ ul{
 	translate: 0px -35px;
 }
 
-.sqrGallinaWare{
+#sqrGallinaWare{
 	background-color: #f4a76c55;
+}
+
+#cirGallinaWare{
+	background-color: #f4a76c;
 }
 
 .imgDeRenta{
@@ -158,8 +162,12 @@ ul{
 	translate: 0px -50px;
 }
 
-.sqrDeRenta{
-	background-color: #a4b20d22;
+#sqrDeRenta{
+	background-color: #a4b20d68;
+}
+
+#cirDeRenta{
+	background-color: white;
 }
 
 .box:hover .imgGallinaWare {
@@ -172,8 +180,12 @@ ul{
 	margin-top: -30px;
 }
 
-.texto2{
+#texto2{
 	margin-top: -20px;
+}
+
+#texto2 p, #link2{
+	color: black;
 }
 
 .box:hover .imgDeRenta {
@@ -201,6 +213,7 @@ ul{
 	font-size: 1rem;
 	transform: translateY(100px);
 	opacity: 0;
+	color: white;
 }
 
 .link{
@@ -210,7 +223,6 @@ ul{
 
 .box:hover p{
 	transform: translateY(0);
-	color: white;
 	opacity: 1;
 }
 
