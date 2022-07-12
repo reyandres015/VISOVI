@@ -104,25 +104,88 @@ ul{
 }
 
 /* menu productos */
-
 .container-all{
-	max-width: 8vw;
-	margin-top: 100px;
+	padding-top: 50px;
+	display: flex;
+	align-items: center;
 }
 
 .container-box{
-
+	display: flex;
+	flex-wrap: wrap;
+	padding: 40px;	
+	margin-top: 20px;
+	margin-bottom: 20px;
+	/* min-height: 250px; */
+	border-radius: 20px;
+	background-color: rgba(255, 255, 255, 0.311);
 }
 
 .box{
-	width: 250px;
-	height: 180px;
+	width: 20vw;
+	height: 15vw;
 	padding: 20px;
-	background: white;
+	margin: 0px 20px 0px 20px;
+	border: 3px  dotted#111F3C;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.69);
 	text-align: center;
 	position: relative;
-	overflow:hidden ;
+	overflow:hidden;
+	cursor: default;
+	transition: all 200ms;
 }
+
+.imgVisoviLegal{
+	width: 17vw;
+}
+
+.sqrVisoviLegal{
+	background-color: rgba(17, 31, 60, 0.3);
+}
+
+.imgGallinaWare{
+	width: 10vw;
+	translate: 0px -35px;
+}
+
+.sqrGallinaWare{
+	background-color: #f4a76c55;
+}
+
+.imgDeRenta{
+	width: 17vw;
+	translate: 0px -50px;
+}
+
+.sqrDeRenta{
+	background-color: #a4b20d22;
+}
+
+.box:hover .imgGallinaWare {
+	transition: .5s;
+	width: 8vw;
+	transform: translateY(15px);
+}
+
+.texto{
+	margin-top: -30px;
+}
+
+.texto2{
+	margin-top: -20px;
+}
+
+.box:hover .imgDeRenta {
+	transition: .5s;
+	width: 11vw;
+	transform: translateY(40px);
+}
+
+/* .box:hover{
+	transform: translate(20px, -20px);
+	box-shadow: -5px 10px 20px -5px white;
+} */
 
 .box, h4, .box p{
 	position: relative;
@@ -140,9 +203,9 @@ ul{
 	opacity: 0;
 }
 
-.box h4{
-	font-size: 35px;
-	transform: translateY(50px);
+.link{
+	font-style: oblique;
+	text-decoration:underline;
 }
 
 .box:hover p{
@@ -151,9 +214,11 @@ ul{
 	opacity: 1;
 }
 
+.box h4{
+	transform: translateY(50px);
+}
+
 .box:hover h4{
-	color: aliceblue;
-	font-size: 30px;
 	transform: translateY(0);
 }
 
@@ -166,13 +231,15 @@ ul{
 	left: -170px;
 	border-radius: 100%;
 	transition: all 300ms;
+	z-index: 0;
 }
 
 .box:hover .background-hover{
-	width: 400px;
-	height: 400px;
-	top: -70px;
-	left: -70px;
+	width: 800px;
+	height: 800px;
+	top: -150px;
+	left: -100px;
+	z-index: 0;
 }
 
 /* footer */
