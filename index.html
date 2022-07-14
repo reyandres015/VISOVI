@@ -7,7 +7,7 @@
     <title>VISOVI S.A.S</title>
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/slider.css">
-    <link rel="stylesheet" href="./CSS/media_query.css" media="screen and (max-width: 1350px)">
+    <link rel="stylesheet" href="./CSS/media_query.css">
     <!-- icono -->
     <link rel="shortcut icon" href="./Imagen/favicon.ico">
     <!-- Fuente -->
@@ -19,25 +19,27 @@
   <header class="header">
     <div class="menu">
         <!-- logo -->
-        <p><a href="index.html"><img src="./Imagen/VISOVI.png" alt="Logo VISOVI.SAS" id="img_logo"></a></p>
+        <p><a href="./index.html"><img src="./Imagen/VISOVI.png" alt="Logo VISOVI.SAS" id="img_logo"></a></p>
         <!-- Barra de Navegacion -->
         <nav>
-          <div class="nav_container">
-            <ul>
-              <li id="actual"><a href="index.html">Inicio</a></li>
-              <li><a href="./HTML/productos.html">Nuestros Servicios</a></li>
-              <li><a href="./HTML/legal.html" class="3">Visovi Legal</a></li>
-              <li><a href="./HTML/gallinaware.html" class="4">GallinaWare</a></li>
-              <li><a href="https://www.derenta.com.co/es-es/" target="_blank" class="5">DeRenta</a></li>
-              <li><a href="./HTML/acerca_de_nosotros.html" class="6">Acerca de Nosotros</a></li>
-            </ul>
-          </div>
+            <div id="back_menu"></div>
+            <i id="btn_menu"><img src="./Imagen/burger_icon_black.png" alt=""></i>
+            <div id="nav_container" class="nav_container">
+                <ul>
+                    <li class="actual"><a href="./index.html">Inicio</a></li>
+                    <li><a href="./HTML/productos.html">Nuestros Servicios</a></li>
+                    <li><a href="./HTML/legal.html">Visovi Legal</a></li>
+                    <li><a href="./HTML/gallinaware.html">GallinaWare</a></li>
+                    <li><a href="https://www.derenta.com.co/es-es/" target="_blank">DeRenta</a></li>
+                    <li><a href="./HTML/acerca_de_nosotros.html">Acerca de Nosotros</a></li>
+                </ul>
+            </div>   
         </nav>
     </div>
 </header>
     <main>
         <!--slider fotos-->
-        <div class="wrapper">
+        <!-- <div class="wrapper">
             <div class="slider" id="slider">
               <ul class="slides">
                 <li class="slide" id="slide1">
@@ -80,7 +82,7 @@
                 </li>
               </ul>
             </div>
-        </div>
+        </div> -->
 
         <!-- menu productos -->
         <div class="container-all">
@@ -105,9 +107,12 @@
               </div>
           </div>
         </div>
+
     </main>
     <footer class="footer">
         <p>© 2021 VISOVI</p>
     </footer>
+    
+    <script src="./JS/main.js"></script>
 </body>
 </html>

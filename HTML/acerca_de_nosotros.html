@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acerca de Nosotros | Visovi</title>
     <link rel="stylesheet" href="..//CSS/style.css">
-    <link rel="stylesheet" href="..//CSS/media_query.css" media="screen and (max-width: 1350px)">
+    <link rel="stylesheet" href="..//CSS/media_query.css">
     <!-- icono -->
     <link rel="shortcut icon" href="../Imagen/favicon.ico">
     <!-- Fuente -->
@@ -20,15 +20,19 @@
             <!-- logo -->
             <p><a href="..//index.html"><img src="..//Imagen/VISOVI.png" alt="Logo VISOVI.SAS" id="img_logo"></a></p>
             <!-- Barra de Navegacion -->
-            <nav>  
-                <ul>
-                    <li><a href="..//index.html">Inicio</a></li>
-                    <li><a href="./productos.html">Nuestros Servicios</a></li>
-                    <li><a href="./legal.html">Visovi Legal</a></li>
-                    <li><a href="./gallinaware.html">GallinaWare</a></li>
-                    <li><a href="https://www.derenta.com.co/es-es/" target="_blank">DeRenta</a></li>
-                    <li class="li_ultimo" id="actual"><a href="./acerca_de_nosotros.html">Acerca de Nosotros</a></li>
-                </ul>
+            <nav>
+                <div id="back_menu"></div>
+                <i id="btn_menu"><img src="..//Imagen/burger_icon_black.png" alt=""></i>
+                <div id="nav_container" class="nav_container">
+                    <ul>
+                        <li><a href="..//index.html">Inicio</a></li>
+                        <li><a href="./productos.html">Nuestros Servicios</a></li>
+                        <li><a href="./legal.html">Visovi Legal</a></li>
+                        <li><a href="./gallinaware.html">GallinaWare</a></li>
+                        <li><a href="https://www.derenta.com.co/es-es/" target="_blank">DeRenta</a></li>
+                        <li class="actual"><a href="./acerca_de_nosotros.html">Acerca de Nosotros</a></li>
+                    </ul>
+                </div>   
             </nav>
         </div>
     </header>
@@ -52,5 +56,7 @@
     <footer class="footer">
         <p>© 2021 VISOVI</p>
     </footer>
+
+    <script src="..//JS/main.js"></script>
 </body>
 </html>
