@@ -6,14 +6,15 @@ background_menu = document.getElementById("back_menu");
 
 function mostrar_menu(){
     nav.style.right = "0px";
-    nav.style.display = "block"
+    nav.style.display = "block";
+    nav.style.transition = "all 300ms";
     background_menu.style.display = "block";
 
 }
 
 function ocultar_menu(){
     nav.style.right = "-275px";
-    nav.style.display = "none"
+    nav.style.display = "none";
     background_menu.style.display = "none";
 
 }
