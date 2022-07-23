@@ -13,14 +13,14 @@ header{
 }
 
 body{
-	background-image: url('..//Imagen/fondo_gallinas.jpg');
+	background-image: url('..//Imagen/Fondo\ Fosca.jpeg');
 	background-size: cover;
 	backdrop-filter: blur(6px);
 	background-repeat: no-repeat;
 }
 
 main{
-	background-color: rgba(17, 31, 60, 0.5);
+	background-color: rgba(83, 48, 48, 0.5);
 	min-height: 100vh;
 	border-top: 3px  dotted#111F3C;
 	border-bottom: 3px  dotted#111F3C;
@@ -103,11 +103,7 @@ ul{
     padding-right: 0px;
 }
 
-#back_menu{
-	display: none;
-}
-
-#btn_menu{
+#back_menu, #btn_menu, #btn_exit{
 	display: none;
 }
 
@@ -116,11 +112,12 @@ ul{
 	padding-top: 50px;
 	display: flex;
 	align-items: center;
+	transition: all 1000ms;
 }
 
 .container-box{
 	display: flex;
-	flex-wrap: wrap;
+	/* flex-wrap: wrap; */
 	padding: 40px;	
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -130,8 +127,9 @@ ul{
 }
 
 .box{
-	width: 20vw;
-	height: 15vw;
+	width: auto;
+	max-height: 30vh;
+	/* height: auto; */
 	padding: 20px;
 	margin: 0px 20px 0px 20px;
 	border: 3px  dotted#111F3C;
@@ -141,7 +139,6 @@ ul{
 	position: relative;
 	overflow:hidden;
 	cursor: default;
-	transition: all 200ms;
 }
 
 .imgVisoviLegal{
@@ -151,6 +148,14 @@ ul{
 #sqrVisoviLegal{
 	background-color: rgba(17, 31, 60, 0.3);
 }
+
+/* #sqrVisoviLegal a{
+	display: none;
+}
+
+.box:active .container-box #sqrVisoviLegal a{
+	display: flex;
+} */
 
 .imgGallinaWare{
 	width: 10vw;
@@ -178,7 +183,25 @@ ul{
 	background-color: white;
 }
 
-.box:hover .imgGallinaWare {
+#cirFollajes{
+	background-color: #68bd5c;
+}
+
+#sqrFollajes{
+	background-color: #113c309a;
+}
+
+.imgFollajes{
+	width: 15vw;
+	translate: 0px -70px;
+}
+
+.box:hover .imgFollajes{
+	transition: .5s;
+	width: 9vw;
+	transform: translateY(50px);
+}
+.box:hover .imgGallinaWare{
 	transition: .5s;
 	width: 8vw;
 	transform: translateY(15px);
@@ -192,8 +215,12 @@ ul{
 	margin-top: -20px;
 }
 
-#texto2 p, #link2{
+#texto2 p, #link2, #texto3 p{
 	color: black;
+}
+
+#texto3{
+	margin-top: -30px;
 }
 
 .box:hover .imgDeRenta {
@@ -226,6 +253,7 @@ ul{
 
 .link{
 	font-style: oblique;
+	font-family: Georgia, 'Times New Roman', Times, serif;
 	text-decoration:underline;
 }
 
@@ -281,8 +309,20 @@ footer p {
 	background-color: #a4b20d22;
 }
 
+#linkDeRenta{
+	color: #a8afbe;
+}
+
 .VisoviLegal{
 	background-color: rgba(17, 31, 60, 0.3);
+}
+
+.Follajes{
+	background-color: #42b8974a
+}
+
+.Follajes p a img{
+	width: 20vw;
 }
 
 .productos .DeRenta img{
@@ -297,7 +337,7 @@ footer p {
 	width: 20vw;
 }
 
-.DeRenta,.GallinaWare,.VisoviLegal{
+.DeRenta,.GallinaWare,.VisoviLegal, .Follajes{
 	display: flex;
 	margin: 40px 20px 40px 20px;
 	padding: 40px 20px 40px 20px;
@@ -321,6 +361,21 @@ footer p {
 .VisoviLegal p{
 	display: flex;
 	align-items: center;
+}
+
+/* Follajes */
+.imagenes{
+	display: flex;
+}
+
+.imagenes img{
+	width: 80vw;
+}
+
+/* GallinaWare */
+
+main #gallinas img{
+	width: 50vw;
 }
 
 /* Acerca de Nosotros */
